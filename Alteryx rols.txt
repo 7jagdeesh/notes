@@ -1,0 +1,9 @@
+Types of Macros - Standard Macro,Batch Macro, Iterative Macro and Location Optimizer Macro its differences.
+how to run single part in workflow.
+how to import Excel macro using Alteryx ( VBA Excel macro from Alteryx )
+Dynamic formula based fields.
+
+
+
+1. Filtering and Data Blending using Alteryx desinger.
+2. Worked on Standard Macros, Data cleansing and parsing tools.

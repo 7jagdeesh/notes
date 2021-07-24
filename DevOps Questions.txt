@@ -1,0 +1,795 @@
+--Day-1-(LINUX)--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1.what is linux?
+ans: An open-source operating system modelled on UNIX.
+
+2.linux components?
+ans: Hardware(RAM/HDD/CPU), 
+Kernel(Core components of Operating System,interacts directly with hardware, proides low level services to upper layer components), 
+Shell(Interface to Kernel, hiding complexity of kernel's functions from users, Takes commands from user and executes kernel's functions) and 
+Utilities(Utility programs giving user most of the functionalities of an operating systems).
+
+3.difference between centos & Ubuntu?
+and: CentOS
+	   i. CentOS was developed by the CentOS project (affiliated with RED HAT)
+	  ii. It is based on Fedora.
+	 iii. It was initially released on 12 April 2007
+	  iv. Its origin was in the USA
+	   v. It uses yum package manager
+	  vi. Its is more stable as compared to Ubuntu
+	 vii. Good for businesses
+	viii. Github repository for centOS is https://github.com/CentOS
+	  ix. The forum of CentOS is https://forums.centos.org/
+	   x. It comes with native KVM virtualization support
+     Ubuntu
+	   i. Ubuntu is developed by Canonical
+	  ii. It is a Debian based OS
+	 iii. It was initially released on October 2004
+	  iv. Its origin was in the Isle of Man
+	   v. It uses apt package manager
+	  vi. It is less stable as compared to CentOS
+	 vii. Good for beginners
+	viii. Github repository of Ubuntu is https://github.com/ubuntu
+	  ix. The forum for Ubuntu is https://ubuntuforums.org/
+	   x. It supports KVM and Xen virtualization.
+
+4.what is putty?
+ans: Free and open-source terminal emulator, serial console and network file transfer application.
+It supports several network protocols, including SCP,SSH,Telnet,rlogin, and raw socket connection.
+
+5.how to kill process in linux?
+ans: kill. You can use the ‘kill’ command to terminate a process by passing the ‘process id’. PID – is the ‘process Id’ of the process that you want to terminate.
+killall. You can use this option to kill processes based on their names, users who launched them. Let’s explore all ‘killall’ options in this section.
+pkill. You can use ‘pkill’ command to terminate process (es) by sending a fullname or partial name of the process.
+top. You can also terminate a process using the popular system monitoring tool – ‘top’. Type ‘9’ which is a SIGKILL.
+
+6.how to check linux server logs?
+ans: Open terminal as a root user and type command (cd /var/log) then ls will give logs details
+/var/log/boot.log: System Boot log (the boot log stores all information related to booting operations)
+/var/log/auth.log: Auth logs (the authentication log stores all authentication logs, including successful and failed attempts)
+/var/log/httpd/: Apache access and error logs
+/var/log/mysqld.log: MySQL database server log file
+/var/log/debug: Debug logs (the debug log stores detailed messages related to debugging and is useful for troubleshooting specific system operations)
+/var/log/daemon.log: Daemon logs (the daemon log contains information about events related to running the Linux operation)
+/var/log/maillog: Mail server logs (the mail log stores information related to mail servers and archiving emails)
+/var/log/kern.log: Kernel logs (the kernel log stores information from the Ubuntu Linux kernel)
+/var/log/yum.log: Yum command logs
+
+7.what is srever logs?
+ans: server log is a log file (or several files) automatically created and maintained by a server consisting of a list of activities it performed. 
+A typical example is a web server log which maintains a history of page requests. The W3C maintains a standard format (the Common Log Format) for web server log files, 
+but other proprietary formats exist
+
+8.what is kernel?
+ans: The kernel is a computer program at the core of a computer's operating system and has complete control over everything in the system. It is the "portion of the operating system code that is always resident in memory", 
+and facilitates interactions between hardware and software components. On most systems, the kernel is one of the first programs loaded on startup (after the bootloader). 
+It handles the rest of startup as well as memory, peripherals, and input/output (I/O) requests from software
+
+9.Basic components in linux?
+ans: Hardware: Peripheral devices such as RAM, HDD, CPU together constitute Hardware layer for the LINUX operating system.
+Kernel: The Core part of the Linux OS is called Kernel, it is responsible for many activities of the LINUX operating system. ...
+Shell: The shell is an interface between the user and the kernel, it hides the complexity of functions of the kernel from the user. ...
+Utilities: Operating system functions are granted to the user from the Utilities. Individual and specialized functions are can be utilized from the System utilities.
+
+10.Advantages of linux?
+ans:Linux is free of cost: Most of the distributions of Linux is free of charge. ...
+Linux provides an abundance of freedom for people who know to code well: This something which is not provided in Windows. ...
+Linux offers stability: Generally, in the case of Windows, there is a chance of the whole system crashing.
+
+11.Difference between linux and windows operating systems?
+ans: Linux
+	   i.Linux is a open source operating system.
+	  ii.Linux is free of cost
+	 iii.it's file name case-sensitive
+	  iv.In linux, monolithic kernel is used.
+	   v.Linux is more efficient in comparision of windows
+	  vi.there is forward slash is used for separating the directories
+	 vii.Linux provides more secutiry than windows
+	viii.Linux is widly used in hacking purpose based systems.
+      
+      Windows
+	   i.While windows are the not the open source operating system
+	  ii.While it is costly
+	 iii.While it's file name is case-insensitive
+	  iv.While in this, micro kernel is used
+	   v.While windows are less efficient.
+	  vi.While there is back slash is used for separating the directories
+	 vii.While it provides less secutiry than linux.
+	viii.While windows does not provide much efficiency in hacking.
+
+12.How to edit files in linux?
+ans: Open a file. If the file does not exist then this command will create the file for you.
+Edit file. To edit a file you need to enter the insert mode. Press ‘i’ to do so. The screen will look like as shown...
+Save and Quit. Nano editor comes pre-installed on most Linux distributions. ... This command will open a screen
+
+13.What are file permission groups in linux?
+ans: Types of permissions. Every directories and file in Linux have three basic permission types. The read permission enables you to open and read a file.
+Permissions groups. Every directory and file on Linux is owned by a specific user and group and are defined separately as three user based permission groups.
+Changing file permission using chmod. With the help of the change mode ‘chmod’ command, we can set the permissions such as read, write, and execute on a directory or file ...
+1. Numeric mode. In a numeric mode, file permissions do not denote as characters but as a three-digit octal number. The following table provides the numbers for all permission types.
+2. Symbolic mode. In this mode, we can change permissions for all three owners. We can modify the permissions of a specific owner.
+
+14.what is ssh authentication in linux?
+ans:SSH Key-based authentication provides an extra layer protection from brute-force attacks. As you can see, configuring key-based authentication is not that difficult either. 
+It is one of the recommended method to keep your Linux servers safe and secure.
+
+15.what is publickey and privatekey in linux?
+ans:The public key is free to use and the private key is kept secret only. The private key mechanism is called symmetric being a single key between two parties. The public key mechanism is called asymmetric being two keys for different purposes. 
+The private key is to be shared between two parties.
+
+16.what is firewall in linux?
+ans:Firewall is a program that surrounds the interface between a private network and the rest of the big and (usually) bad internet. You can think of the firewall as a gateway.
+
+17.how linux related to devops?
+ans:Linux and DevOps As previously mentioned, Linux and DevOps share very similar philosophies and perspectives; both are focused on customization and scalability. The customization aspect of Linux is of particular importance for DevOps.
+
+18.how to create ssh key in linux?
+ans:Open a terminal. Type: ssh-keygen -t rsa Alternatively, you can also use the DSA (Digital Signing Algorithm) technology to create the public/private key. ...
+In the next screen, you should see a prompt, asking you for the location to save the key. The default location is the .ssh folder in your Home directory. ...
+Next, you will be prompted to enter passphrase. This is NOT the passphrase to connect to your remote host.
+
+--Day-2---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+19.what is RCA?(Root Cause Analysis)
+ans:Root cause analysis (RCA) is defined as a collective term that describes a wide range of approaches, tools, 
+and techniques used to uncover causes of problems. Some RCA approaches are geared more toward identifying true root causes than others, 
+some are more general problem-solving techniques, and others simply offer support for the core activity of root cause analysis.
+
+20.Difference between serverlogs & application logs?
+ans:System Log --> The SAP system logs for every important action like system errors, warnings, user locks, & process message in the system log. Two types - Local (By that server only), Central (By all the servers). T Code Used - SM21
+Application Log --> The application log is a tool that collects messages, exceptions & errors from an application. This information is organized and displayed in a log.
+Difference :Application logging records the progress of the execution of an application, whereas the system log record system events.
+
+21.what is logs in software?
+ans:Detailed list of an application information, system performance, or user activities. 
+A log can be useful for keeping track of computer use, emergency recovery, and application improvement. 
+Each software program that is capable of creating a log has different methods of starting or stopping the log creation.
+
+22.what is OOM(Out of Memory) killer in linux?
+ans:The "OOM Killer" or "Out of Memory Killer" is a process that the Linux kernel employs when the system is critically low on memory. 
+This situation occurs because processes on the server are consuming a large amount of memory, 
+and the system requires more memory for its own processes and to allocate to other processes.
+
+23.what is Cgroup in linux?
+ans:Cgroups are special mechanism provided by the Linux kernel which allows us to allocate kind of resources like processor time, number of processes per group, 
+amount of memory per control group or combination of such resources for a process or set of processes.
+
+24.how to restart the linux server?
+ans:Step 1: Open Terminal Window.
+Step 2: Use the shutdown Command.
+Alternative Option: Restart Linux with reboot Command.
+Reboot Remote Linux Server.Step 1: Open Command Prompt.Step 2: Use SSH Connection Issue reboot Command.
+
+25.difference between restart & reboot?
+ans:is that reboot is (computing) to cause a computer to execute its boot process, effectively resetting the computer and causing the operating system to reload, 
+especially after a system or power failure while restart is (computing) to reboot. 
+is that reboot is (computing) an instance of rebooting while restart is the act of starting something again.
+
+26.what is downtime in software?
+ans:Downtime is a computer industry term for the time during which a computer or IT system is unavailable, offline or not operational.
+
+27.how to monitor our linux servers?
+ans:Installation. The installation is quite simple. ... Once the installation completes, you're ready to use the app.
+Usage. Issue the command glances and the curses-based tool will open ( Figure A ). The Glances curses-based interface is...
+Web server mode. The next trick is to run Glances in web server mode. ... The above command will only output that the...
+Easy Linux server monitoring. Monitoring your Linux server has never been easier. If the top command doesn't display...
+
+28.how to add additional memory to server?
+ans:Determine the Current Size of the Computer's Memory. For computers running Windows, Microsoft provides a program called Task Manager that provides a quick display of the system's status.
+Locate the Memory Modules in the Computer. Power down the computer and unplug the computer's power cord. ...
+Plan Your Upgrade. ...
+Obtain the New Memory Modules
+
+29.what is /root in linux?
+ans:The main answer of what is Linux File System quesiton is Root directory. Root directory (/) is the top of the all directories in this File System. All the other directories are connected to this directory. Only root user has write permission under root directory (/).
+
+/(root)--Root directory (/) is the top of the all directories in this File System. All the other directories are connected to this directory. Only root user has write permission under root directory (/).
+/bin   --There are different binary programs that are needed during booting, upgrading, repairing etc. The executable binary programs are stored in /bin directory. It is also the directory of the basic Linux commands.
+/boot  --/boot directory holds the important files for boot-up process. In other words it includes boot loader files. It is one of the other answer of what is Linux File System question.
+/dev   --/dev directory includes all the device files. These devices can be any physical devices like cpu, usb, storages etc.
+/etc   --/etc directory is another important directory of Linux File System. This file contains configuration files of the applications and different start and stop scritpts.
+/home  --/home is the home directory of all users. Each user’s personal files are stored in this directory in Linux Directory System. /home directory contains user directories like downloads, documents, desktop etc.
+/lib   --/lib directory contains library files that support binaries that resides in /bin and /sbin. Kernel modules and shared library images are also stored here.
+/media --/media directory is used as a temporary mount directory for removable devices.  For example, this can be a cdrom.
+/mnt   --/mnt directory is the temporary directory where we can mount filesystems in Linux Directory systems.
+/opt   --/opt directory contains the 3th party applications. These applications can be installed directly under /opt or under any other sub directory under /opt.
+/srv   --/srv directory contains server specific services data. Srv is the abbreviation of service.
+/sbin  --/sbin is the directory in Linux directory systems that includes system binary executable programs. This can be ifconfig, reboot, iptables, init, route etc.
+/sys   --/sys directory includes virtual filesystem that stores the modifications that we do on the connected devices.
+/tmp   --/tmp directory is another directory used in Linux File System. /tmp directory stores temporary files of the user and the system. After a reboot it id deleted. In other words, it stores the files between reboots.
+/usr   --/usr directory contains executable libraries, documentation, binaries for second level program.
+/proc  --/proc directory is another directory of Linux File System.  It includes the system process information. It is a virtual filesystem with tect information about system resoruces.
+/var   --/var directory stores all variable files and temporary files created by users. For examle this can be a log file.
+
+30.what is /opt, /tmp in linux?
+ans:/opt directory contains the 3th party applications. These applications can be installed directly under /opt or under any other sub directory under /opt.
+/tmp directory is another directory used in Linux File System. /tmp directory stores temporary files of the user and the system. After a reboot it id deleted. In other words, it stores the files between reboots.
+
+31.what is dmesg in linux?
+ans:dmesg (Display message or driver message) is a command which will show Kernel ring buffers. These messages contain valuable information about device drivers loaded into the kernel at the time of booting as well as when we connect a hardware to the system on the fly.
+
+32.what is IPV4 in linux?
+ans:The following IPv4 address ranges are reserved for the private networks: You can determine your system private IP address by querying the network stack with commands such as ip, ifconfig or hostname. In Linux, the standard tool for displaying and configuring network interfaces is ip.
+
+33.how to create ssh key authentication?
+ans:Generating the ssh key. The first thing we must do is generate the ssh key on the server. ...
+Copying the key to the client. Once that command completes, you need to copy the key from the server to the client. ...
+Testing the connection. When that finishes, it's time to test the connection. ...
+Disabling password authentication. ...
+Enjoy the security.
+
+34.what is ping telnet in linux?
+ans:Common Linux network tools - ping, telnet, netstat and arp ping (Packet Internet Gropper) Ping command allows a user to ping another network IP address. Ping command sends ICMP ECHO_REQUEST packets to other hosts and this command can help determine the connectivity to the remote host.
+
+--Day-3-(MAVEN)---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+35.why MAVEN?
+ans:We can easily build a project using maven.
+We can add jars and other dependencies of the project easily using the help of maven.
+Maven provides project information (log document, dependency list, unit test reports etc.)
+Maven is very helpful for a project while updating central repository of JARs and other dependencies.
+
+36.advantages of MAVEN?
+ans:Maven can add all the dependencies required for the project automatically by reading pom file.
+One can easily build their project to jar,war etc. as per their requirements using Maven.
+Maven makes easy to start project in different environments and one doesn’t needs to handle the dependencies injection, builds, processing, etc.
+Adding a new dependency is very easy. One has to just write the dependency code in pom file.
+
+37.difference between maven and ant?
+ans: Maven
+	  i.Basic - Maven is a build automation framework based on the concept of a project object mode(POM)
+	 ii.Tool/Framework - It is frame work
+	iii.Lifecycle - It has lifecycle
+	 iv.Declarative/Procedural - It is Declarative
+     Ant
+	  i.Basic - Ant is a Java library and command line tool whose can be used to compile your code, fetching dependencies and for packaging
+	 ii.Tool/Framework - It is a tool box
+	iii.Lifecycle - It has no lifecycle. In ant each task is independent and we'll defined
+	 iv.Declarative/Procedural - It is Procedural
+
+38.what is pam.xml?
+ans:POM is an acronym for Project Object Model. The pom.xml file contains information of project and configuration information for the maven to build the project such as dependencies, build directory, 
+source directory, test source directory, plugin, goals etc. Maven reads the pom.xml file, then executes the goal
+
+39.what is groupid?
+ans:
+GroupID puts an end to the chain of manual processes by automating the creation and management of these types of changes. Dynamically maintain groups based on rules applied to your directory data. So, w hen user information changes, 
+GroupID automatically updates the appropriate distribution lists and security groups. Your groups will never be out of date again
+
+40.what is artifactid?
+ans:The artifactId is the id of the project. It specifies the name of the project. A section of an XML file is as follows. The section ‘pediaa’ in the groupId is the company name. 
+All the projects of the company will be under com.pediaa while the tutorials are in com.pediaa.tutorials. Therefore, com.pediaa.tutorials is the groupId
+
+41.maven lifecycle?
+ans:the default lifecycle comprises of the following phases (for a complete list of the lifecycle phases, refer to the Lifecycle Reference):
+
+validate - validate the project is correct and all necessary information is available
+compile - compile the source code of the project
+test - test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
+package - take the compiled code and package it in its distributable format, such as a JAR.
+verify - run any checks on results of integration tests to ensure quality criteria are met
+install - install the package into the local repository, for use as a dependency in other projects locally
+deploy - done in the build environment, copies the final package to the remote repository for sharing with other developers and projects.
+
+42.types of repositories in maven?
+ans:. i.Local repository - exists on developer's machine and is maintained by the developer. It is in sync with the maven repositories defined in the 'settings.xml' in their '~home/.m2' folder. If no private remote internal repository is setup and listed in the pom.xml file or settings.xml file, then this local repository on developer's machine is synchronized with the public maven repository at ibiblio.org.
+ii. Private remote internal repository - This repository which we will setup. We will change the maven pom.xml or settings.xml to use this repository
+iii. Public remote external repository - This is the public external repository at ibiblio.org. By default, maven synchronizes with this repository.
+
+43.advantages of maven plugins?
+ans:the basic list of tasks that are handled by plugins in maven :
+i.Creating jar/war/ear files.
+ii.Code compilation
+iii.Unit testing of the code.
+iv.Project documentation
+Behavior of any plugin can be changed using a set of parameters exposed by each plugin goal (also known as Mojo). A Mojo in maven is just a goal, basically specifies the metadata of a goal - goal name, which phase it fits into and parameters expected by the goal
+
+44.what are the maven goals?
+ans:i.compiler:compile – the compile goal from the compiler plugin is bound to the compile phase
+ii.compiler:testCompile is bound to the test-compile phase
+iii.surefire:test is bound to test phase
+iv.install:install is bound to install phase
+v.jar:jar and war:war is bound to package phase
+
+45.how to integrate maven with jenkins?
+ans:I. Configure Maven in Jenkins
+1. Go to Jenkins Dashboard ->Manage Jenkins ->Manage plugins ->Available ->Maven Integration ->Install
+2. Go to Manage Jenkins->Global tool configuration->Maven -> Add Maven_home variable value (i.e. path of the maven file on your system). if manually installing the maven
+3. Go to Jenkins Dashboard -> New Item -> Maven Project option will be available
+II. Build a Maven project
+Go to Jenkins Dashboard -> New Item -> Choose name for the Maven Project (e.g. MyFirstMavenExample)
+Creating a new job in Jenkins
+2. On Configure Page, set the following:
+a). Discard Old builds
+Days to keep builds: 1
+Max of builds to keep: 5
+Configuration page of the Jenkins job
+b). JDK (to be used for this project) Java-1.8
+c). Build -> adavanced -> enable the following
+– Resolve Dependencies during Pom parsing
+– Use custom workspace (add path of the folder containing pom.xml)
+-Goals & Options = Clean Compile Test
+Configuration page of the Jenkins job
+3). Apply & Save
+4). Go to Project Window and Click ‘Build Now’.
+
+46.what is maven artifact?
+ans:In Maven terminology, the artifact is the resulting output of the maven build, generally a jar or war or other executable file. Artifacts in maven are identified by a coordinate system of groupId, artifactId, and version. Maven uses the groupId, artifactId, and version to identify dependencies (usually other jar files) needed to build and run your code
+
+47.why maven plugins are used?
+ans:Maven" is really just a core framework for a collection of Maven Plugins. In other words, plugins are where much of the real action is performed, plugins are used to: create jar files, create war files, compile code, unit test code, create project documentation, and on and on.
+
+48.where do you find the class file when you compile a maven project?
+ans:To find out why it can't find the symbols, you need to examine one of the errors. Look into the folder target and check if the missing class exists in there (at the right place).
+mvn clean deletes this folder but mvn compile should put new files in there.
+If you can't see anything obvious, then save a list of all the files in the target folder somewhere. Then build the project in IDEA. Again create a list of all files.
+
+49.difference between jar and var?
+ans:JAR files are an acronym for “Java Archive” files; WAR files are an acronym for “Web Application Archive” files. The functionality of these files are different, and in application of J2EE, the packaging of modules is either as WAR or JAR based on their functionality
+
+50.for pom what are the minimum required elements?
+ans:i.project –> root element
+ii.modelVersion –> mandatory element with value 4.0.0 which is currently supported version for both Maven 2 & 3
+iii.groupId –> this is the top-most element while considering maven repository structure and its generally kept unique amongst organization
+iv.artifactId –> this is similar to name of the project and this lies under <groupId> element
+v.version –> this is final element in Maven co-ordinate system and generally it defines version of the project. Like, initially it can be kept 1.0 and later with couple changes version changes to 1.1 or 2.0 depending on the major/minor releases. Together with <groupId> & <artifactId> elements acts like an address and timestamp in one
+vi.name –> any meaningful name to the project
+vii.description –> description of the project
+viii.packaging –> this elements defines how exactly this project needs to be bundled or packaged after development. Various packaging standards in Java/JEE project developemtns are JAR or WAR or EAR. When no <packaging> element defined, then by default final products is packaged as JAR
+ix.url –> this elements can be used to define where exactly project going to live after development (normally it points to SVN location)
+x.dependencies/dependency –> defines what are the required dependencies for this project into developments (read here about dependency scopes and transitive dependencies)
+xi.build/plugins –> various plugins along with their goals can be configured under <build> element (read here about Maven plugins)
+xii.finalName –> this is the child element under <build> element defining what will be final name of the project and a JAR or WAR or EAR will be generated under “target” folder with this name
+
+51.what are the aspects does maven manages?
+ans:Builds
+Documentation
+Reporting
+Dependencies
+SCMs
+Releases
+Distribution
+
+52.what are the default goals in maven?
+ans:AFAIK, there are not default goals for Maven plugins. You can configure a plugin without adding a goal. But this does not execute the plugin. The plugin must be either executed explicitly on command line (like flyway:migrate) or is executed automatically through the lifecycle (like compile:compile or jar:jar ).
+
+--Day-4-(JENKINS-&-MAVEN)-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+53.difference between application logs and server logs?
+ans:System Log --> The SAP system logs for every important action like system errors, warnings, user locks, & process message in the system log. Two types - Local (By that server only), Central (By all the servers). T Code Used - SM21
+Application Log --> The application log is a tool that collects messages, exceptions & errors from an application. This information is organized and displayed in a log.
+Difference :Application logging records the progress of the execution of an application, whereas the system log record system events.
+
+54.what is jenkins home directory?
+ans:The Jenkins home directory contains all the details of your Jenkins server configuration, details that you configure in the Manage Jenkins screen
+
+55.how to restart the jenkins?
+ans:Alternative 1: Using the Jenkins installation URL: Jenkins_URL/restart. Example: http://jenkinsserver.com/restart This...
+Alternative 2: Using the command line, depending on your Jenkins installation. If you're installing using rpm or deb...
+If you're installing using rpm or deb package or you have the Jenkins installation in Red Hat, Ubuntu, or Debian, you...
+sudo service jenkins restart This restart Jenkins in one step
+
+56.how to identify the error msgs in server?
+
+57.how will you verify wether jenkins job is succed or not?
+ans:If I understood correctly, you want to check the result of the build - if it was a success or a failure, in other words. Jenkins CLI's "build" command changes the exit code depending on the result of the build, as long as you use the -s or -f option at the end. For example, java -jar jenkins-cli.jar -s <url of Jenkins instance> build <project> -s
+
+58.What is Jenkins
+ans:Jenkins is a software that allows continuous integration. Jenkins will be installed on a server where the central build will take place. The following flowchart demonstrates a very simple workflow of how Jenkins works. Along with Jenkins, sometimes, one might also see the association of Hudson
+
+59.Advantages of Jenkins
+ans:It is open source and it is user-friendly, easy to install and does not require additional installations or components.
+It is free of cost.
+Easily Configurable. Jenkins can be easily modified and extended. It deploys code instantly, generates test reports. Jenkins can be configured according to the requirements for continuous integrations and continuous delivery.
+Platform Independent. Jenkins is available for all platforms and different operating systems, whether OS X, Windows or Linux.
+
+60.Jenkins vs bamboo
+ans:Jenkins is an open-source tool, while Bamboo is a commercial tool. Jenkins is a project supported by its global community, and Bamboo has its own dedicated team for its development. Bamboo has a more user-friendly approach than Jenkins – as usually, open-source apps are more concerned with other features.
+
+61.What is Jenkins home directory
+ans:The Jenkins home directory contains all the details of your Jenkins server configuration, details that you configure in the Manage Jenkins screen
+
+62.How to pass variables in Jenkins
+ans:This WORKS and is what you do to pass variables to remote job: def handle = triggerRemoteJob (remoteJenkinsName: 'remoteJenkins', job: 'RemoteJob' paramters: "param1=$ {env.PARAM1}\nparam2=$ {env.param2}") Use \n to separate two parameters, no spaces.. As opposed to parameters: '''someparams'''.
+
+63.How to take Jenkins back up
+ans:Attach an external disk to your Jenkins server.
+Mount the disk to the server on a folder, say /jenkins_data
+If you have existing data, move all data from /var/lib/jenkins to /jenkins_data folder first.
+Symlink /var/lib/jenkins to /jenkins_data.
+Restart Jenkins and check if Jenkins is using the newly mounted disk.
+
+64.How to restart the Jenkins
+ans:Alternative 1: Using the Jenkins installation URL: Jenkins_URL/restart. Example: http://jenkinsserver.com/restart This...
+Alternative 2: Using the command line, depending on your Jenkins installation. If you're installing using rpm or deb...
+If you're installing using rpm or deb package or you have the Jenkins installation in Red Hat, Ubuntu, or Debian, you...
+sudo service jenkins restart This restart Jenkins in one step
+
+65.How to create job in Jenkins?
+ans:Logging to Jenkins Provide username and password and click on Sign in. We can see the Main Dashboard of Jenkins. ...
+Create a First Item in Jenkins What is a Jenkins freestyle project? A Jenkins project is a repeatable build job which contains steps and post-build actions. ...
+Verify the job “kt-firstjob” in the jenkins dashboard Click on Jenkins
+
+66.How to upgrade Jenkin version
+ans:You can just copy the link to download from your Jenkins GUI, and go to command prompt, and use wget to download the war file.
+cd /downloads
+wget http://updates.jenkins-ci.org/download/war/2.9/jenkins.war
+
+67.How to update Jenkins plugins
+ans:https://www.thegeekstuff.com/2016/06/upgrade-jenkins-and-plugins/#:~:text=How%20to%20Upgrade%20Jenkins%20to%20New%20Version%20and,as%20some%20plugins%20might%20...%20More%20items...%20
+
+68.Jenkins use cases
+ans:https://www.stratoscale.com/blog/devops/practical-devops-use-case-github-jenkins-docker/#:~:text=%20Practical%20DevOps%20Use%20Case%3A%20Using%20Github%2C%20Jenkins,Click%20on%20New%20Item%20on%20the...%20More%20
+
+69.What is continues integration
+ans:https://staragile.com/blog/continuous-integration-in-devops#:~:text=What%20is%20Continuous%20Integration%20in%20DevOps%20DevOps%20is,operate%20and%20maintain%20high-quality%20code%20to%20the%20customer.
+
+70.How to build the application with the help of Jenkins
+ans:https://medium.com/appgambit/ci-cd-pipeline-for-a-nodejs-application-with-jenkins-fa3cc7fad13a
+
+71.How to delete old builds in Jenkins
+ans:https://infoheap.com/jenkins-delete-old-builds/#:~:text=Jenkins%20%E2%80%93%20how%20to%20delete%20old%20builds%201,to%2010%20or%20any%20other%20desired%20value.%20
+
+72.Application logs vs server logs
+ans:https://stackoverflow.com/questions/63672805/configure-fluentd-to-pick-jenkins-job-application-logs-in-a-kubernetes-cluster
+
+73.Jenkins logs location
+ans:https://www.jenkins.io/doc/book/system-administration/viewing-logs/#:~:text=Logs%20on%20the%20system%201%20Linux%202%20Windows.,%2Fvar%2Flog%2Fjenkins%2Fjenkins.log%2C%20unless%20customized%20in%20org.jenkins-ci.plist.%204%20Docker.%20
+
+74.What is logs in software
+ans:Detailed list of an application information, system performance, or user activities. A log can be useful for keeping track of computer use, emergency recovery, and application improvement. Each software program that is capable of creating a log has different methods of starting or stopping the log creation.
+
+75.How to integrate Maven with Jenkins
+ans:https://devops4solutions.com/jenkins-maven-integration/#:~:text=Jenkins%20integration%20with%20Maven%201%20Go%20to%20Jenkins,Item%20-%3E%20Maven%20Project%20option%20will%20be%20available
+
+76.How to integrate Jenkins with git-hub
+ans:https://www.cprime.com/resources/blog/how-to-integrate-jenkins-github/#:~:text=%20How%20to%20Integrate%20Jenkins%20with%20GitHub%20,we%E2%80%99ll%20tell%20Jenkins%20to%20use%20the...%20More%20
+
+77.How to install Jenkins
+ans:Jenkins is typically run as a standalone application in its own process with the built-in Java servlet container/application server (Jetty).
+Jenkins can also be run as a servlet in different Java servlet containers such as Apache Tomcat or GlassFish. However, instructions for setting up these types of installations are beyond the scope of this chapter
+
+--Day-5-(JENKINS-&-MAVEN)-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+78.how to restart jenkins?
+ans:Alternative 1: Using the Jenkins installation URL: Jenkins_URL/restart. Example: http://jenkinsserver.com/restart This...
+Alternative 2: Using the command line, depending on your Jenkins installation. If you're installing using rpm or deb...
+If you're installing using rpm or deb package or you have the Jenkins installation in Red Hat, Ubuntu, or Debian, you...
+sudo service jenkins restart This restart Jenkins in one step.
+
+79.how to remove jenkins workspace?
+ans:Find the .
+Double-click it.
+Since Jenkins is already installed, Windows Installer will give you options to customize it or remove it.
+Choose " Uninstall .
+
+80.how to secure our jenkins?
+ans:Deploy the Jenkins.war and start the server.
+Open the Jenkins home page and click on Manage Jenkins.
+In the Manage Jenkins page, click on Setup Security button.
+In the next page, select the enable security check box.
+Here, the very first thing to be done is to set the security realm. The easiest way to do this is to have Jenkins with our own database. ...
+Now a link Sign up will be available. Click on the same and fill the form to sign up. Once successful, log in with the account created
+
+81.what is matrixed based security machanism in jenkins?
+ans:
+
+82.how to install plugins?
+ans:->Open Microsoft Edge and go to the Microsoft Edge Addons Store at https://microsoftedge.microsoft.com/.
+->Select the extension you'd like to add, and select the Get button.
+->At the prompt showing permissions required by the extension, carefully review the permissions, and then select the Add extension button.
+->The next prompt will confirm the extension has been added
+
+83.how to update the plugins in jenkins?
+ans:Download the plugin from the plugin site ( http://updates.jenkins-ci.org/download/plugins)
+Copy that plugin into the $JENKINS_HOME/plugins directory
+At that point either start Jenkins or call the reload settings service ( http://yourservername:8080/jenkins/reload)
+
+84.how to integrade jenkins with some other tools(Docker,Ansible, etc..)?
+ans:If you run into issues with Ansible complaining about executable permissions, try modifying the Vagrantfile‘s synced_folder entry from config.vm.synced_folder ".", "/vagrant" to
+config.vm.synced_folder ".", "/vagrant", mount_options: ["dmode=700,fmode=600"]. You’ll find an example in the Vagrantfile.
+->git clone https://github.com/vfarcic/jenkins-docker-ansible.git
+->cd jenkins-docker-ansible
+->vagrant up cd
+
+
+--Day-6-(JENKINS)-Morning----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+85.difference between poll scm and build periodically?
+ans:Poll SCM periodically polls the SCM to check whether changes were made (i.e. new commits) and builds the project if new commits where pushed since the last build, whereas build periodically builds the project periodically even if nothing has changed.
+
+86.difference between jenkins master & slave?
+ans:enkins Slave is also called a Node or a slave agent.
+Jenkins Slave is a java executable that runs on a remote machine. All these nodes configure in any server like Windows,
+Jenkins Slaves keep an eye on Jenkins master for instructions regarding the build execution. As soon as Jenkins Master.
+If we configure any projects specifically on a particular Slave, then only that project will run on that specific slave
+
+87.how master will communicate with slave(what are the protocalls)?
+ans:https://blog.knoldus.com/i2c-communication-protocol/
+
+88.what are the build triggers available in jenkins?
+ans:A trigger lets us execute a job on an event occurrence. This event is called a trigger. To see the list of build triggers, we need to login to Jenkins and click on any item already created and click on configure. Trigger build remotely: The job is usually triggered by accessing a specified URL. This is convenient for scripts.
+
+89.how to enable Webhooks in github?
+ans:Navigate to the “Settings” tab.
+Select the “Webhooks” option on the left menu
+Click “Add Webhook”
+
+90.create a schedule for trigger jenkins build job tomorrow @12PM and tomorrow @8AM? (cronguru)
+ans: * 12 * * * and * 8 * * *
+
+91.how to create node/agent/slave/worker in jenkins?
+ans:https://dzone.com/articles/jenkins-03-configure-master-and-slave
+
+92.difference between open source jenkins & Cloud bees jenkins?
+ans:What is CloudBees? Enterprise Jenkins and DevOps. Enables organizations to build, test and deploy applications to production, utilizing continuous delivery practices. They are focused solely on Jenkins as a tool for continuous delivery both on-premises and in the cloud.
+What is Jenkins? An extendable open source continuous integration server. In a nutshell Jenkins CI is the leading open-source continuous integration server. Built with Java, it provides over 300 plugins to support building and testing virtually any project.
+CloudBees can be classified as a tool in the "Platform as a Service" category, while Jenkins is grouped under "Continuous Integration".
+Some of the features offered by CloudBees are:
+Hosted CI/CD as a Service
+Flexible and governed software delivery automation
+Starter Kit
+On the other hand, Jenkins provides the following key features:
+Easy installation
+Easy configuration
+Change set support
+Jenkins is an open source tool with 13.3K GitHub stars and 5.48K GitHub forks. Here's a link to Jenkins's open source repository on GitHub.
+
+93.advantages of jenkins master & slave?
+ans:ut if you have hundreds jobs running on different platform (Linux, Windows, 32/64 bits), it's better to use Jenkins slave.
+You can affect some labels per slave to sort them by OS, platform, ...
+Your Jenkins slaves can run on a VM or on a Docker image.
+I think you can find a lot of information on Stackoverflow
+
+94.where is jenkins configuration available?
+ans:configuration options for Jenkins by clicking the ‘Manage Jenkins’ option from the left hand menu side. You will then be presented with the following screen − Click on Configure system. Discussed below are some of the Jenkins configuration settings which can be carried out.
+
+95.how to increase the executor in master & slave?
+ans:https://www.studytonight.com/jenkins/jenkins-master-slave-configuration
+
+96.why we need to increase executor in master & slave?
+ans:https://www.studytonight.com/jenkins/jenkins-master-slave-configuration
+
+97.what are the environments available in software?
+ans:Development, Testing, Staging & Production.
+
+98.what is environment in software?
+ans:Azure Pipelines | Azure DevOps Server 2020 An environment is a collection of resources, such as Kubernetes clusters and virtual machines, that can be targeted by deployments from a pipeline. Typical examples of environment names are Dev, Test, QA, Staging, and Production. The advantages of using environments include the following
+
+--Day-6-(JENKINS)--Evening---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+99.How to notify jenkins build status?
+ans: in job configuration we have postable options and we can enable editable email notification and we can provide developers mail ID's as well as the DevOps team members mail ID's.
+so that if any jenkins job will get failed automatically jenkins will trigger the email notification to development team, so that we can identify easily.
+once we get the notification from the jenkins we need to verify jenkins console output.
+
+100.how you'll identify wether it is developer issue or DevOps issue?
+ans:while running the jenkins job maven will break the entire application code. if is there any issue with the code jenkins automatically break the build and send email notification to development team.
+if is there any issue related with the jenkins job went to abortet state.
+
+101.how to integrate jenkins with docker?
+ans:we can integrate multiple ways
+->via docker ssh pluggin.
+->via jenkins slave
+
+102.how to integrate jenkins with ansible?
+ans:we can integrate ansible with jenkins multiple ways
+->Ansible invoke plugin
+->via jenkins slave
+
+103.what is continuous delivery
+ans:before moving our application to live we will deliver our application to UAT(User Acceptence Testing) Pre PROD.for doing some integration testing and user acceptence testing. once it is okay will take approval from UAT Pre PROD then will deploy our application to production.
+
+104.what is continuous deployment?
+ans:directly we wont deploy our application on production, first we will deliver out application to some lower environments once our application is running fine then will move to production.
+
+105.what is development environment?
+106.what is testing environment?
+107.what is staging environment?
+108.what is production environment?
+109.how your application will move to production?
+110.draw your production environment?
+111.how to trouble shoot production environment?
+112.how to monitor any environment?
+113.shellscript for identifying the server disc usage?
+114.type of pipelines in jenkins?
+115.difference between maven job and freestyle job?
+116.what is multibranch pipeline?
+117.list of some CI tools?
+118.what is release management in devops?
+119.difference between agile and SDLC?
+120.what is jira?
+121.what are the priorities in jira?
+122.what is signoff in release management?
+
+
+--Day-7-(JIRA)-Morning----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+123.how you'll get requirement/task/work? or how your day will start?what is your roles and responsibilities in your project?what is your day to day activities?
+ans:basically we are using JIRA as a ticketing tool we will get requirement through JIRA only while creating the ticket developer will mention priority either P0 or P1 or P2. based on priority will take action on high priority tickets.
+if my developer observed any issue on production they will create ticket as a high priority with P0. if they observe any issue on lower environments like DEV or QA they'll create ticket as a P1. so when we get into office we will verify outlook email as well as the JIRA.
+
+124.what type of requirement we will get from the developer?
+ans:sometimes developers will create ticket for jenkins pipeline, for build jobs,for release activities.
+sometimes they'll creates for fixing the existing issues(bugs)
+while creating the ticket developer will mention either bug or story. if it is newly implimented it comes under story. if it is there any existed issue or any issue occures, comes under bug.
+
+125.Aadvantages of JIRA?
+ans:Supports roadmap requirements. Jira has tools that enable users to sketch out the big picture, communicate plans, and connect the bigger project roadmap goals to the team’s everyday tasks.
+Great for agile.
+Available integration.
+Highly customizable.
+For different types of users
+
+126.Difference between bug and story in JIRA?
+ans:https://community.atlassian.com/t5/Jira-articles/Understanding-issue-types-in-jira/ba-p/1497237
+
+127.what is JIRA workflow?
+ans:https://support.atlassian.com/jira-cloud-administration/docs/work-with-issue-workflows/
+
+128.why use JIRA software?
+ans:Jira for software development teams . Jira Software provides planning and roadmap tools so teams can manage stakeholders, budgets, and feature requirements from day one. Jira integrates with a variety of CI/CD tools to facilitate transparency throughout the software development life cycle.
+
+129.what is sprint in JIRA?
+ans:Sprint in JIRA is nothing but collections of tasks or issues for a software application, the team should be works on to complete within a specific period of time
+
+130.what is scrum in JIRA?
+ans:Activities of Scrum JIRA. Product Backlog creation – The requirements, also called the user stories, are clustered together when all the team members have agreed upon the created requirement list
+
+131.what is JIRA Dashboard?
+ans:A Jira dashboard is a collection of gadgets. You customize a dashboard by adding gadgets and configuring them to display the information you want to see. After you’ve added the gadgets you want, you can place them into different layouts to suit your needs, too. A typical Jira instance has more than 40 gadgets.
+
+--Day-8-(ANSIBLE)-Morning----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+132.how to install ansible?
+ans:->yum install epel-release
+->yum install ansible -y
+->ansible --version
+
+133.benefits of ansible?
+ans:The feedback loop is accelerated at a faster rate
+The bugs are found sooner and not wait till the end
+Risk due to lack of sufficient knowledge is mitigated
+The deployments are reliable
+The IT infrastructure is coordinated
+The deployments are faster
+Need for automation
+Version control and configuration management
+Orchestration of the IT Infrastructure.
+
+134.what is playbook and inventory?
+ans:An Ansible playbook is a file where users write Ansible code, an organized collection of scripts defining the work of a server configuration. They describe a set of steps in a general IT process or a policy for your remote systems to enforce.
+Playbooks consist of one or more plays run in a particular order. A play is an ordered set of tasks run against hosts chosen from your inventory. Plays define the work to be done. Each play contains a set of hosts to configure, and a list of tasks to be executed. There are no standardized plays; an administrator must write each play
+---
+- hosts: webservers
+serial: 5 # update 5 machines at a time
+roles:
+- common
+- webapp
+- hosts: content_servers
+roles:
+- common
+- content
+
+135.create an sample inventory?
+ans:A list of managed nodes.
+An inventory file is also sometimes called a “hostfile”.
+Your inventory can specify information like IP address for each managed node.
+An inventory can also organize managed nodes, creating and nesting groups for easier scaling.
+
+136.how to get server IP?
+ans:ifconfig
+
+137.create an sample playbook for install java and nginx?
+ans:https://gist.github.com/icasimpan/803955c7d43e847ce12ff9422c1cbbc4
+
+138.what is playbook syntax?
+ans:ansible-playbook playbook.yml -f 10
+
+139.what is yaml?
+ans:Besides human-readable code, YAML also features:
+Cross-language data portability
+A consistent data model
+One-pass processing
+Ease of implementation and use
+
+140.what indicates --- in playbook?
+ans:--- # The minus in YAML indicates a list item. The playbook contains # a list of plays, with each play being a dictionary - name: import playbook hosts: localhost gather_facts: false tasks: - name: Play 1 - Task 1 debug: msg: "Play 1 - Task 1" - import_tasks: tasks-1.yml - import_playbook: play2.yml
+
+141.what is the host in playbook?
+ans:Host The host section defines the target machines where the playbook will run. This information is based on the Ansible inventory file. The host section is, therefore, a list of devices.
+
+142.how to pass variables in playbook?
+ans:You need to add quotation marks to string values with spaces to pass them as extra variables:
+# ansible-playbook deploy-apache.yaml --extra-vars "apache_ssl_protocol='All -SSLv2 -SSLv3'"
+
+143.how to create passwordless authentication between the ansible master and remotes?
+ans:Using ssh-keygen, copy the id_rsa.pub key to the remote and master to authoized keys.
+
+144.difference between ansible and chef?
+ans:
+
+145.how to setup ansible?
+ans:
+
+146.ansible playbook components?
+ans:
+
+147.what are the modules in ansible?
+ans:
+
+148.what is module in ansible?
+ans:
+
+149.how to run playbook in ansible?
+ans:
+
+150.how ansible works?
+ans:
+
+
+--Day-8-(ANSIBLE)-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+list of some modules in ansible?
+create playbook for tomcat installation?
+create playbook for java installatin?
+create playbook for removing java on remote machines?
+create playbook for restarting the httpt in remote machines?
+create playbook for coping the ssh key?
+
+
+--Day-9-(ANSIBLE)-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Day-10-(DOCKER)-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+what is docker layers?
+difference between docker and docker hub?
+advantage of expose command in docker?
+what is tag in docker file?
+difference between docker pull and docker push?
+write down some docker commands?
+what is command for running docker image?
+what is docker volumes?
+
+
+--Day-11------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+why microservices?
+difference between monolothic and microservice architecture?
+advantages of microservice architecture?
+use cases of microservice architecture?
+advantages of docker volume?
+difference between docker container and docker volume?
+difference between docker volume and bindmounts?
+difference between docker hub vs docker?
+what is service discovery in microservices?
+what is service bus in microservice?
+
+--Day-12------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+advantages of docker networking?
+what is docker network?
+how to check docker network IP?
+what is IP address?
+what is the default network in docker?
+what is prune command?
+how to remove untagged images from docker?
+what are the dangling images in docker?
+difference between unused images and dangling images?
+how to create custom network in docker?
+what is IP address range in docker?
+how to change the default docker subnet IP range?
+create sample compose file?
+what is docker compose?
+what is docker demon?
+how to restart docker?
+docker architecture?
+how to add custom port number via docker?
+what is port number?
+
+
+
+
+
+
+
+

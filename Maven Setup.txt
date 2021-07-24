@@ -1,0 +1,53 @@
+Connect to your instance in AWS using public IPV4 through Putty and then follow these steps
+    go to 'sudo su -' root path
+    1` yum update (optional)
+    2  yum install java-1.8* -y
+    3  java -version
+    4  ls -la (find .bash_profile to add path in to it)
+    5  cd /usr/lib/jvm -- goto this path and enter 'ls' to find 'jre-1.8.0-openjdk-1.8.0...(directory)' and go to that location using cd
+    6  after entering to the path 'pwd' copy the path starts with /usr/lib/jvm/.....x86_64
+    7  vi ~/.bash_profile (add new_name=copied path and below line 'export new_name' and mention the same name in path '$new_name:'
+    8  source ~/.bash_profile
+    9  echo $PATH --it will include the openjdk file in the path
+Download Jenkins Redhat Packages (pkg.jenkins.io/redhat/)
+   10  yum install wget -y
+   11  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+   12  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+   13  yum install jenkins -y
+   14  systemctl start jenkins
+   15  systemctl enable jenkins
+   16  systemctl status jenkins
+go to the instance and click on security->security group link->edit inbound rules-> add rule(port range 8080, 0.0.0.0/0)->save rules
+Enter the details IPaddress:8080 then copy the /var/lib....
+   17  cat /var/lib/jenkins/secrets/initialAdminPassword --copy the code and enter in web browser and install suggested plugins
+download appache maven project
+   18  cd /opt
+   19  mkdir maven
+   20  cd maven
+copy Binary tar.gz archive in link as copy link address
+   21  wget https://mirrors.estointernet.in/apache/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz(Copied link address)
+   22  ls
+   23  tar zvxf apache-maven-3.8.1-bin.tar.gz
+   24  ls
+   25  cd apache-maven-3.8.1
+   26  ls
+   27  cd bin
+   28  ./mvn -version
+   29  env
+   30  exportPATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/root/bin:/root/bin:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64:/root/bin
+below you need to add '/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:' along with this add pwd
+   31  export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/opt/maven/apache-maven-3.8.1/bin
+   32  echo $PATH
+   33  mvn -version
+copy runtime code and goto the Jenkins webpage->Manage Jenkins->global tools configuration-> add JDK and paste copied @ JAVA_HOME
+for adding Maven copy 'maven home line' then add maven_home and in this steps uncheck the 'Install automatically'
+   34  yum install git -y
+   35  git --version
+and go to the plugin manager->available then search for maven then select 'Maven Integration','Maven Invoker' and install without restart
+create new item in jenkins and enter name-maven project
+then under 'source code management' select git-- copy the git code and paste here and save
+then start 'build now'
+
+
+
+
